@@ -2,40 +2,63 @@
 
 In the realm of cloud computing, AWS stands as a pivotal platform for deploying scalable web applications. 'CloudPlus Network' is a project that leverages AWS to facilitate robust online interactions and enrich connections within the digital community.
 
-### Background
+## Table of Contents
+- [Background](#background)
+- [Problem Statement](#problem-statement)
+- [Objective](#objective)
+- [Project Description](#project-description)
+- [Architecture](#architecture)
+- [Well-Architecture Framework](#well-architecture-framework)
+  - [Operational Excellence](#operational-excellence)
+  - [Security](#security)
+  - [Reliability](#reliability)
+  - [Performance Efficiency](#performance-efficiency)
+  - [Cost Optimization](#cost-optimization)
+  - [Sustainability](#sustainability)
+- [Development Phases](#development-phases)
+- [Progress Status](#progress-status)
+- [Cost Estimation of AWS Services](#cost-estimation-of-aws-services)
+- [Expected Outcomes](#expected-outcomes)
+- [Conclusion](#conclusion)
+- [Acknowledgements](#acknowledge)
+
+## Background
 
 Despite the widespread adoption of AWS, there's a gap in practical, hands-on experience among aspiring cloud professionals.
 
-### Problem Statement
+## Problem Statement
 
 A noticeable divide exists between theoretical knowledge of cloud services and the practical ability to implement scalable, secure web applications on AWS.
 
-### Objective
+## Objective
 
 To architect and launch 'CloudPlus Network,' a web-based application utilizing AWS services for authentication, data management, and content delivery. The project aims to provide a practical learning experience in deploying scalable applications using AWS technologies including Cognito, Lambda, DynamoDB, S3, and CloudFront.
 
 ## Project Description
 
-'CloudPlus Network' aims to create an accessible platform where users can seamlessly engage, sharing online spaces for interaction, showcasing the utilization of AWS for 
-- authentication (Cognito), 
-- dynamic content delivery (CloudFront), 
-- serverless computing (Lambda), 
-- API management (API Gateway), and 
-- data storage (DynamoDB and S3).
-<img src="figures/project-des.png"> 
+'CloudPlus Network' aims to create an accessible platform where users can seamlessly engage, sharing online spaces for interaction, showcasing the utilization of AWS for:
+
+- Authentication (Cognito)
+- Dynamic content delivery (CloudFront)
+- Serverless computing (Lambda)
+- API management (API Gateway)
+- Data storage (DynamoDB and S3)
+
+![Project Description Image](figures/project-des.png)
 
 ## Architecture
 
-The project architecture involves
--  a front-end built with modern web technologies, interfacing with backend services hosted on AWS. 
-- Key AWS Services include 
-    - Lambda for application logic, 
-    - DynamoDB for managing user data, 
-    - Cognito for secure user authentication, 
-    - S3 for static web page storage, 
-    - CloudFront, and 
-    - API Gateway.
-<img src="figures/architecture.png"> 
+The project architecture involves a front-end built with modern web technologies, interfacing with backend services hosted on AWS. Key AWS Services include:
+
+- Lambda for application logic
+- DynamoDB for managing user data
+- Cognito for secure user authentication
+- S3 for static web page storage
+- CloudFront
+- API Gateway
+
+![Architecture Image](figures/architecture.png)
+
 ## Well-Architecture Framework
 
 The project aligns with the AWS Well-Architected Framework, covering Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.
@@ -75,7 +98,8 @@ Details the progress of tasks such as Application Front-end, Initial Cloud Setup
 ## Cost Estimation of AWS Services
 
 Provides a monthly cost estimation of AWS Services, highlighting the utilization within and after the Free Tier limits.
-<img src="figures/cost.png"> 
+
+![Cost Estimation Image](figures/cost.png)
 
 ## Expected Outcomes
 
@@ -85,20 +109,17 @@ Demonstrates the synergy between AWS services in web application frameworks, sho
 
 'CloudPlus Network' exemplifies the blend of technical know-how and practical application in deploying scalable web applications on AWS.
 
-Code Link: [GitHub - CloudPulseNetwork](https://github.com/shaficse/CloudPulseNetwork.git)
-
 ## Acknowledge
-
 
 - Smith, A. (2020). Scaling Web Applications in Cloud Environments. Journal of Cloud Computing Advances, Challenges and Innovations, 15(3), 112-128.
 - Johnson, B., & Liu, H. (2021). Comparative Analysis of AWS, Google Cloud, and Azure for Web Deployment. International Journal of Cloud Computing Services and Architecture, 11(2), 234-250.
-Carter, J. (2019). 
-- Leveraging AWS Lambda for Serverless Web Applications. Computing Trends, 9(4), 45-60.
-- Amazon Web Services. (n.d.). AWS Best Practices for Operational Excellence. Retrieved from https://aws.amazon.com/architecture/well-architected/
-- Amazon Web Services. (n.d.). AWS Security Best Practices. Retrieved from https://aws.amazon.com/security/best-practices/
-- Amazon Web Services. (n.d.). AWS Reliability Pillar Whitepaper. Retrieved from https://aws.amazon.com/whitepapers/architecture/reliability/
-- Amazon Web Services. (n.d.). AWS Performance Efficiency Pillar. Retrieved from https://aws.amazon.com/architecture/well-architected/performance-efficiency/
-- Amazon Web Services. (n.d.). AWS Cost Optimization Pillar. Retrieved from https://aws.amazon.com/architecture/well-architected/cost-optimization/
-- Amazon Web Services. (n.d.). AWS Sustainability Pillar. Retrieved from https://aws.amazon.com/about-aws/sustainability/
-- Practical AWS: Lambda, API Gateway, Cognito, Dynamo DB, S3 Hosting, and CloudFront https://medium.com/@jith/a-practical-introduction-to-aws-lambda-api-gateway-cognito-dynamo-db-s3-hosting-and-60002b22947a 
+- Carter, J. (2019). Leveraging AWS Lambda for Serverless Web Applications. Computing Trends, 9(4), 45-60.
+- [AWS Best Practices for Operational Excellence](https://aws.amazon.com/architecture/well-architected/)
+- [AWS Security Best Practices](https://aws.amazon.com/security/best-practices/)
+- [AWS Reliability Pillar Whitepaper](https://aws.amazon.com/whitepapers/architecture/reliability/)
+- [AWS Performance Efficiency Pillar](https://aws.amazon.com/architecture/well-architected/performance-efficiency/)
+- [AWS Cost Optimization Pillar](https://aws.amazon.com/architecture/well-architected/cost-optimization/)
+- [AWS Sustainability Pillar](https://aws.amazon.com/about-aws/sustainability/)
+- [Practical AWS: Lambda, API Gateway, Cognito, Dynamo DB, S3 Hosting, and CloudFront](https://medium.com/@jith/a-practical-introduction-to-aws-lambda-api-gateway-cognito-dynamo-db-s3-hosting-and-60002b22947a)
 
+[GitHub - CloudPulseNetwork](https://github.com/shaficse/CloudPulseNetwork.git)
