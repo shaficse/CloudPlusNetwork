@@ -115,11 +115,7 @@ Demonstrates the synergy between AWS services in web application frameworks, sho
 - Johnson, B., & Liu, H. (2021). Comparative Analysis of AWS, Google Cloud, and Azure for Web Deployment. International Journal of Cloud Computing Services and Architecture, 11(2), 234-250.
 - Carter, J. (2019). Leveraging AWS Lambda for Serverless Web Applications. Computing Trends, 9(4), 45-60.
 - [AWS Best Practices for Operational Excellence](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Security Best Practices](https://aws.amazon.com/security/)
-- [AWS Reliability Pillar Whitepaper](https://aws.amazon.com/whitepapers/)
-- [AWS Performance Efficiency Pillar](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Cost Optimization Pillar](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Sustainability Pillar](https://aws.amazon.com/about-aws/sustainability/)
+
 - [Practical AWS: Lambda, API Gateway, Cognito, Dynamo DB, S3 Hosting, and CloudFront](https://medium.com/@jith/a-practical-introduction-to-aws-lambda-api-gateway-cognito-dynamo-db-s3-hosting-and-60002b22947a)
 
 [GitHub - CloudPulseNetwork](https://github.com/shaficse/CloudPulseNetwork.git)
