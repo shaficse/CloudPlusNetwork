@@ -143,7 +143,7 @@ const loadUsers = () => {
   });
 };
 
-function refresh(){
+function refresh() {
   const userBtn = document.querySelector(".user");
   var cognitoUser = userPool.getCurrentUser();
   if (cognitoUser != null) {
@@ -239,13 +239,13 @@ function loadChatDetails(otherUser) {
         console.log(result);
         chats = result.data;
         displayChatDetails(chats, curUser, otherUser)
-        
+
       })
       .catch((err) => console.log(err));
-    });
+  });
 }
 
-function displayChatDetails(chats,curUser,otherUser) {
+function displayChatDetails(chats, curUser, otherUser) {
   const chatContainer = document.querySelector(".message-container");
   chatContainer.innerHTML = "";
   //console.log("chats= " + conv.messages);
@@ -276,7 +276,7 @@ function displayChatDetails(chats,curUser,otherUser) {
     const pTime = document.createElement("p");
     pTime.classList.add("time");
     console.log("time = " + chat.unixtime);
-    const d = new Date(Number(chat.unixtime)*1000);
+    const d = new Date(Number(chat.unixtime) * 1000);
     console.log("date = " + d);
     pTime.innerText = moment(d).fromNow();
     div.appendChild(pTime);
@@ -285,12 +285,14 @@ function displayChatDetails(chats,curUser,otherUser) {
   });
 }
 
-function postChat() {
-  let cognitoUser = userPool.getCurrentUser();
-  let curUser = cognitoUser.username;
-  otherUser = location.hash.substring(1);
 
-  let unique_name = getUniqueName(curUser, otherUser);
+function postChat() {
+  getJWTToken(function (token) {
+    let cognitoUser = userPool.getCurrentUser();
+    let curUser = cognitoUser.username;
+    otherUser = location.hash.substring(1);
+
+    let unique_name = getUniqueName(curUser, otherUser);
 
     const msgInput = document.querySelector(".msg-input");
     var msg = msgInput.value;
@@ -298,21 +300,25 @@ function postChat() {
     msgInput.value = "";
     console.log("post chat !" + msg);
 
-    const now = new Date()  
-    const secondsSinceEpoch = Math.round(now.getTime() / 1000)  
+    const now = new Date()
+    const secondsSinceEpoch = Math.round(now.getTime() / 1000)
 
-  var payload = {
-    sender_receiver: unique_name,
-    unixtime: secondsSinceEpoch,
-    sender: curUser,
-    receiver: otherUser,
-    message: msg
-  };
-  apiClient
-    .chatsPost({ sender_receiver: unique_name }, payload, { headers: { Authorization: token } } )
-    .then(function (result) {
-      console.log('success post !');
-      console.log(result);
-    })
-    .catch((err) => console.log(err));
+    var payload = {
+      sender_receiver: unique_name,
+      unixtime: secondsSinceEpoch,
+      sender: curUser,
+      receiver: otherUser,
+      message: msg
+    };
+
+
+    apiClient
+      .chatsPost({ sender_receiver: unique_name }, JSON.stringify(payload), { headers: { Authorization: token, "Content-Type": "text/plain" } })
+      .then(function (result) {
+        console.log('success post !');
+        console.log(result);
+        loadChatDetails(otherUser);
+      })
+      .catch((err) => console.log(err));
+  });
 }
