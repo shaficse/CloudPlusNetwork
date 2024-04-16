@@ -80,8 +80,8 @@ Details the progress of tasks such as Application Front-end, Initial Cloud Setup
 |------------------------------|-----------------|----------------|--------------------|-------------|-------------|------------|
 | Application Front-end        | 7               | 15             | 1. Shafi           | 2023-03-15  | 2023-03-22  | 100%       |
 | Initial Cloud Setup          | 5               | 10             | 1. Shafi           | 2023-03-23  | 2023-03-29  | 100%       |
-| Development                  |                 |                |                    |             |             |            |
-| - Lambda                     | 7               | 15             | 1. Shafi           | 2023-03-29  | 2023-04-04  | 100%       |
+| Development                  | 7               | 15             | 1. Shafi           | 2023-03-29  | 2023-04-04  | 100%       |
+| - Lambda                     |                 |                |                    |             |             |            |
 | - API Gateway                |                 |                |                    |             |             |            |
 | - Cognito                    |                 |                |                    |             |             |            |
 | - IAM Policies & Role        |                 |                |                    |             |             |            |
