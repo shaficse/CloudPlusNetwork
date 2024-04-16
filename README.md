@@ -61,31 +61,19 @@ The project architecture involves a front-end built with modern web technologies
 
 ## Well-Architecture Framework
 
-The project aligns with the AWS Well-Architected Framework, covering Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.
+The architecture described efficiently adheres to the AWS Well-Architected Framework, encompassing its six core pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. Below is a breakdown of how this configuration supports each pillar:
 
-### Operational Excellence
+| Serial No. | Pillar               | Key Components and Contributions                                                                                                                                                           |
+|------------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1          | Operational Excellence | - **CloudWatch**: Provides operational insights and automated responses to system events.<br>- **Serverless Architecture**: Simplifies operations by reducing the need for manual server management. |
+| 2          | Security              | - **Cognito**: Manages secure user authentication and access control.<br>- **IAM Policies**: Ensures minimal and necessary permissions for service interaction.<br>- **API Gateway**: Manages secure API access.               |
+| 3          | Reliability           | - **Lambda and DynamoDB**: Managed services with built-in failover and recovery.<br>- **DynamoDB Multi-AZ**: Enhances database availability and fault tolerance.                             |
+| 4          | Performance Efficiency | - **Lambda**: Scales automatically with request volume.<br>- **CloudFront**: Reduces latency by serving content from the nearest location.<br>- **DynamoDB**: Provides fast, scalable performance.          |
+| 5          | Cost Optimization     | - **Serverless Services**: We pay only for what we use, reducing unnecessary costs.<br>- **S3 and CloudFront**: Economical storage and data transfer solutions.                                |
+| 6          | Sustainability         | - **Serverless Architecture**: Optimizes resource usage, reducing the environmental impact.<br>- **CloudFront**: Minimizes energy consumption by reducing data travel distances.                     |
 
-Achieved through automation, monitoring, and iterative processes using AWS Lambda, CloudWatch, and CI/CD methodologies.
+This table provides a concise overview of how each component within the architecture supports the corresponding pillar of the AWS Well-Architected Framework, ensuring a robust, scalable environment.
 
-### Security
-
-Secured by AWS Cognito for authentication, IAM for access management, and encryption of data in transit and at rest.
-
-### Reliability
-
-Ensured through DynamoDB, stateless Lambda functions, and resilient S3 and CloudFront services.
-
-### Performance Efficiency
-
-Leverages AWS Lambda, DynamoDB, and CloudFront for scalable and efficient performance.
-
-### Cost Optimization
-
-Minimizes costs by adjusting resources to match demand, supplemented by continuous usage monitoring.
-
-### Sustainability
-
-Focuses on efficient use of computing resources and planning future improvements with AWS CloudFormation to automate infrastructure management.
 
 ## Development Phases
 
@@ -94,6 +82,20 @@ Outlined are the initial setup, development of Lambda functions, integration of 
 ## Progress Status
 
 Details the progress of tasks such as Application Front-end, Initial Cloud Setup, Development, Integration, Deployment, and Evaluation with respective durations, hours required, assigned resources, start and end dates, and completion percentages.
+| Task                         | Duration (Days) | Hours Required | Assigned Resources | Start Date  | End Date    | Completion |
+|------------------------------|-----------------|----------------|--------------------|-------------|-------------|------------|
+| Application Front-end        | 7               | 15             | 1. Shafi           | 2023-03-15  | 2023-03-22  | 100%       |
+| Initial Cloud Setup          | 5               | 10             | 1. Shafi           | 2023-03-23  | 2023-03-29  | 100%       |
+| Development                  |                 |                |                    |             |             |            |
+| - Lambda                     | 7               | 15             | 1. Shafi           | 2023-03-29  | 2023-04-04  | 100%       |
+| - API Gateway                |                 |                |                    |             |             |            |
+| - Cognito                    |                 |                |                    |             |             |            |
+| - IAM Policies & Role        |                 |                |                    |             |             |            |
+| Integration                  | 2               | 10             | 1. Shafi           | 2023-04-05  | 2023-04-08  | 100%       |
+| Deployment                   | 2               | 10             | 1. Shafi           | 2023-04-09  | 2023-04-10  | 100%       |
+| Evaluation                   | 2               | 10             | 1. Shafi           | 2023-04-11  | 2023-04-12  | 100%       |
+| **Total**                    | **25**          | **70**         | **1**              | **2023-03-15** | **2023-04-12** | **100%** |
+
 
 ## Cost Estimation of AWS Services
 
