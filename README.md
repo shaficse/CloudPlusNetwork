@@ -114,4 +114,4 @@ Demonstrates the synergy between AWS services in web application frameworks, sho
 
 - [Practical AWS: Lambda, API Gateway, Cognito, Dynamo DB, S3 Hosting, and CloudFront](https://medium.com/@jith/a-practical-introduction-to-aws-lambda-api-gateway-cognito-dynamo-db-s3-hosting-and-60002b22947a)
 
-[GitHub - CloudPulseNetwork](https://github.com/shaficse/CloudPulseNetwork.git)
+[GitHub - CloudPulseNetwork](https://github.com/shaficse/CloudPlusNetwork.git)
